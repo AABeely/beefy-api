@@ -1,5 +1,7 @@
 import { beefyfinance } from './platforms/beefyfinance';
 import { beamswap } from './platforms/beamswap';
+import { stellaswap } from './platforms/stellaswap';
+import { solarflare } from './platforms/solarflare';
 import { tokens } from './tokens/tokens';
 import { convertSymbolTokenMapToAddressTokenMap } from '../../util/convertSymbolTokenMapToAddressTokenMap';
 import Chain from '../../types/chain';
@@ -9,6 +11,8 @@ const _moonbeam = {
   platforms: {
     beefyfinance,
     beamswap,
+    solarflare,
+    stellaswap,
   },
   tokens,
   tokenAddressMap: convertSymbolTokenMapToAddressTokenMap(tokens),

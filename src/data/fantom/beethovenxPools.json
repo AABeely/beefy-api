@@ -1,5 +1,105 @@
 [
   {
+    "name": "beets-daiabolical-balance",
+    "address": "0xD5E946b5619fFf054c40D38c976f1d06C1e2fA82",
+    "vault": "0x20dd72Ed959b6147912C2e529F0a0C651c33c9ce",
+    "vaultPoolId": "0xd5e946b5619fff054c40d38c976f1d06c1e2fa820002000000000000000003ac",
+    "poolId": 80,
+    "decimals": "1e18",
+    "tokens": [
+      {
+        "oracle": "tokens",
+        "oracleId": "DAI",
+        "decimals": "1e18"
+      },
+      {
+        "oracle": "tokens",
+        "oracleId": "usd-balance",
+        "decimals": "1e18"
+      }
+    ]
+  },
+  {
+    "name": "beets-gelato-genesis",
+    "address": "0x76A0631699Aa67a574340639036Fc93f5A1302F4",
+    "vault": "0x20dd72Ed959b6147912C2e529F0a0C651c33c9ce",
+    "vaultPoolId": "0x76a0631699aa67a574340639036fc93f5a1302f400020000000000000000040f",
+    "poolId": 79,
+    "decimals": "1e18",
+    "tokens": [
+      {
+        "oracle": "tokens",
+        "oracleId": "USDC",
+        "decimals": "1e6"
+      },
+      {
+        "oracle": "tokens",
+        "oracleId": "gelato",
+        "decimals": "1e18"
+      }
+    ]
+  },
+  {
+    "name": "beets-boomer-beets",
+    "address": "0x8DBB92ca6c399792AC07510a0996C59902cD75a1",
+    "vault": "0x20dd72Ed959b6147912C2e529F0a0C651c33c9ce",
+    "vaultPoolId": "0x8dbb92ca6c399792ac07510a0996c59902cd75a1000200000000000000000299",
+    "poolId": 62,
+    "decimals": "1e18",
+    "tokens": [
+      {
+        "oracle": "tokens",
+        "oracleId": "BTC",
+        "decimals": "1e8"
+      },
+      {
+        "oracle": "tokens",
+        "oracleId": "BEETS",
+        "decimals": "1e18"
+      }
+    ]
+  },
+  {
+    "name": "beets-exploding-shrapnel",
+    "address": "0x2Ba4953C75860e70Cd70f15a2D5Fe07DE832Bcd1",
+    "vault": "0x20dd72Ed959b6147912C2e529F0a0C651c33c9ce",
+    "vaultPoolId": "0x2ba4953c75860e70cd70f15a2d5fe07de832bcd1000200000000000000000210",
+    "poolId": 50,
+    "decimals": "1e18",
+    "tokens": [
+      {
+        "oracle": "tokens",
+        "oracleId": "WFTM",
+        "decimals": "1e18"
+      },
+      {
+        "oracle": "tokens",
+        "oracleId": "SHRAP",
+        "decimals": "1e18"
+      }
+    ]
+  },
+  {
+    "name": "beets-beefy-tale",
+    "address": "0x3bd4c3d1f6F40d77B2e9d0007D6f76E4F183A46d",
+    "vault": "0x20dd72Ed959b6147912C2e529F0a0C651c33c9ce",
+    "vaultPoolId": "0x3bd4c3d1f6f40d77b2e9d0007d6f76e4f183a46d0002000000000000000002d7",
+    "poolId": 61,
+    "decimals": "1e18",
+    "tokens": [
+      {
+        "oracle": "tokens",
+        "oracleId": "WFTM",
+        "decimals": "1e18"
+      },
+      {
+        "oracle": "tokens",
+        "oracleId": "beFTM",
+        "decimals": "1e18"
+      }
+    ]
+  },
+  {
     "name": "beets-multichain-maxi",
     "address": "0xf5c690b7Af4fDC551eC89aCbaD91C6D646762A93",
     "vault": "0x20dd72Ed959b6147912C2e529F0a0C651c33c9ce",
@@ -20,6 +120,46 @@
       {
         "oracle": "tokens",
         "oracleId": "MULTI",
+        "decimals": "1e18"
+      }
+    ]
+  },
+  {
+    "name": "beets-statera-duet",
+    "address": "0x5Bb2DeE206C2bCc5768B9B2865eA971Bd9c0fF19",
+    "vault": "0x20dd72Ed959b6147912C2e529F0a0C651c33c9ce",
+    "vaultPoolId": "0x5bb2dee206c2bcc5768b9b2865ea971bd9c0ff19000200000000000000000219",
+    "poolId": 52,
+    "decimals": "1e18",
+    "tokens": [
+      {
+        "oracle": "tokens",
+        "oracleId": "WSTA",
+        "decimals": "1e18"
+      },
+      {
+        "oracle": "tokens",
+        "oracleId": "BEETS",
+        "decimals": "1e18"
+      }
+    ]
+  },
+  {
+    "name": "beets-solid-beets",
+    "address": "0xF2b2103E1351c4D47b27eFC8100bb264364FA92C",
+    "vault": "0x20dd72Ed959b6147912C2e529F0a0C651c33c9ce",
+    "vaultPoolId": "0xf2b2103e1351c4d47b27efc8100bb264364fa92c00020000000000000000025a",
+    "poolId": 59,
+    "decimals": "1e18",
+    "tokens": [
+      {
+        "oracle": "tokens",
+        "oracleId": "SOLID",
+        "decimals": "1e18"
+      },
+      {
+        "oracle": "tokens",
+        "oracleId": "BEETS",
         "decimals": "1e18"
       }
     ]

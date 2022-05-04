@@ -38,6 +38,167 @@ const FTM = {
 } as const;
 
 const _tokens = {
+  sFTMx: {
+    name: 'sFTMx',
+    symbol: 'sFTMx',
+    address: '0xd7028092c830b5C8FcE061Af2E593413EbbC1fc1',
+    chainId: 250,
+    decimals: 18,
+    logoURI: 'https://assets.spookyswap.finance/tokens/sFTMX.png',
+    website: 'https://fantom.staderlabs.com/liquid-staking/pools',
+    description: 'sFTMX is a liquid token that users get when they stake FTM with Stader.',
+  },
+  SD: {
+    name: 'Stader SD',
+    symbol: 'SD',
+    address: '0x412a13C109aC30f0dB80AD3Bd1DeFd5D0A6c0Ac6',
+    chainId: 250,
+    decimals: 18,
+    logoURI: 'https://s2.coinmarketcap.com/static/img/coins/64x64/12623.png',
+    website: 'https://staderlabs.com/',
+    description: 'Stader (SD) token is the native governance and value accrual token for Stader.',
+  },
+  ORKAN: {
+    name: 'Orkan',
+    symbol: 'ORKAN',
+    address: '0xfB66e49e303A186a4c57414Ceeed651a7a78161a',
+    chainId: 250,
+    decimals: 9,
+    logoURI: 'https://app.spiritswap.finance/images/tokens/ORKAN.png',
+    website: 'https://orkan.finance/#/dashboard',
+    description:
+      'The Orkan ($ORK) is a meta-governance protocol that aims to bootstrap liquidity flow on the Fantom Opera Blockchain.',
+  },
+  USDB: {
+    name: 'USD Balance',
+    symbol: 'USDB',
+    address: '0x6Fc9383486c163fA48becdEC79d6058f984f62cA',
+    chainId: 250,
+    decimals: 18,
+    website: 'http://www.usdbalance.com/',
+    description:
+      'USDB provides a wide range of financial tools and services to individuals and institutions',
+    logoURI: '',
+  },
+  GEL: {
+    name: 'Gelato',
+    symbol: 'GEL',
+    address: '0x15b7c0c907e4C6b9AdaAaabC300C08991D6CEA05',
+    chainId: 250,
+    decimals: 18,
+    website: 'https://www.gelato.network/',
+    description:
+      "Automate your smart contracts.  Outsource your web3 DevOps needs and enjoy the perks of Ethereum's most reliable bot network at your fingertips.",
+    logoURI: '',
+  },
+  FTML: {
+    name: 'Top Shelf Fantom L-Token',
+    symbol: 'FTML',
+    address: '0xC0d9784FDba39746919Bbf236eB73bc015fD351D',
+    chainId: 250,
+    decimals: 18,
+    website: 'https://topshelf.finance/',
+    description:
+      'Mint fully decentralized sythentic assets on Binance Smart Chain, Fantom & Avalanche.',
+    logoURI: '',
+  },
+  USDL: {
+    name: 'Top Shelf USD L-Token',
+    symbol: 'USDL',
+    address: '0x4A89338A2079A01eDBF5027330EAC10B615024E5',
+    chainId: 250,
+    decimals: 18,
+    website: 'https://topshelf.finance/',
+    description:
+      'Mint fully decentralized sythentic assets on Binance Smart Chain, Fantom & Avalanche.',
+    logoURI: '',
+  },
+  STG: {
+    name: 'Stargate',
+    symbol: 'STG',
+    address: '0x2F6F07CDcf3588944Bf4C42aC74ff24bF56e7590',
+    chainId: 250,
+    decimals: 18,
+    logoURI:
+      'https://raw.githubusercontent.com/traderjoe-xyz/joe-tokenlists/main/logos/0x2F6F07CDcf3588944Bf4C42aC74ff24bF56e7590/logo.png',
+    website: 'https://stargate.finance/',
+    description:
+      'Stargate is a community-driven organization building the first fully composable native asset bridge, and the first dApp built on LayerZero.',
+  },
+  APE: {
+    name: 'ApeCoin APE',
+    symbol: 'APE',
+    address: '0x2d72A97a31Dc920dB03330780d30074626e39C8A',
+    chainId: 250,
+    decimals: 18,
+    logoURI: 'https://assets.spookyswap.finance/tokens/APE.png',
+    website: 'http://apecoin.com/',
+    description:
+      'ApeCoin is for the Web3 Economy. Culture has found new expression in web3 through art, gaming, entertainment, and events.',
+  },
+  SHRAP: {
+    name: 'Shrapnel SHRAP',
+    symbol: 'SHRAP',
+    address: '0xbf4906762C38F50bC7Be0A11BB452C944f6C72E1',
+    chainId: 250,
+    decimals: 18,
+    logoURI:
+      'https://app.fbomb.finance/images/tokens/0xbf4906762C38F50bC7Be0A11BB452C944f6C72E1.png',
+    website: 'https://app.fbomb.finance/',
+    description: 'Shrapnel is an inflationary token launched along with BombSwap.',
+  },
+  BSHARE: {
+    name: 'BSHARE',
+    symbol: 'BSHARE',
+    address: '0x49C290Ff692149A4E16611c694fdED42C954ab7a',
+    chainId: 250,
+    decimals: 18,
+    website: 'https://basedfinance.io/',
+    description: 'Based Finance the first algorithmic token pegged to TOMB on the FTM Network.',
+    logoURI: 'https://assets.coingecko.com/coins/images/23507/small/based.PNG',
+  },
+  BASED: {
+    name: 'BASED',
+    symbol: 'BASED',
+    address: '0x8D7d3409881b51466B483B11Ea1B8A03cdEd89ae',
+    chainId: 250,
+    decimals: 18,
+    website: 'https://basedfinance.io/',
+    description: 'Based Finance the first algorithmic token pegged to TOMB on the FTM Network.',
+    logoURI: 'https://assets.coingecko.com/coins/images/23535/small/BASED_TOKEN.109291b9.png',
+  },
+  ATLAS: {
+    name: 'Atlas Cloud',
+    symbol: 'ATLAS',
+    address: '0x92df3eaBf7c1c2A6b3D5793f6d53778eA78c48b2',
+    chainId: 250,
+    decimals: 18,
+    website: 'https://atlascloud.network/',
+    description: 'Atlas Cloud is a Nodes-as-a-service protocol on a Fantom chain.',
+    logoURI: 'https://assets.spookyswap.finance/tokens/Atlas.png',
+  },
+  SOLID: {
+    name: 'Solidly',
+    symbol: 'SOLID',
+    address: '0x888EF71766ca594DED1F0FA3AE64eD2941740A20',
+    chainId: 250,
+    decimals: 18,
+    website: 'https://solidly.exchange/',
+    description:
+      'Solidly is an AMM allowing fully decentralized token swapping with support for low slippage trades between pegged assets like stablecoins.',
+    logoURI: 'https://assets.spookyswap.finance/tokens/SOLID.png',
+  },
+  KAE: {
+    name: 'Kanpeki KAE',
+    symbol: 'KAE',
+    address: '0x65Def5029A0e7591e46B38742bFEdd1Fb7b24436',
+    chainId: 250,
+    decimals: 18,
+    logoURI: 'https://assets.spookyswap.finance/tokens/KAE.png',
+    website: 'https://kanpeki.finance/',
+    description:
+      'Kanpeki is an incentivized, non-custodial, individualized, fixed-rate borrowing, and lending platform.',
+  },
   CRE8R: {
     name: 'CRE8R DAO',
     symbol: 'CRE8R',
@@ -46,7 +207,7 @@ const _tokens = {
     decimals: 18,
     website: 'https://cre8r.vip/',
     description:
-      'The worlds first & only decentralized Web3 content marketing agency DAO. Massively scalable. Fueled by DeFi. ',
+      'The worlds first & only decentralized Web3 content marketing agency DAO. Massively scalable. Fueled by DeFi.',
     logoURI: 'https://app.spiritswap.finance/images/tokens/CRE8R.png',
   },
   DEI: {
@@ -314,8 +475,19 @@ const _tokens = {
     logoURI:
       'https://assets.coingecko.com/coins/images/21208/small/vXl4xT-P_400x400.png?1638567924',
   },
+  LUNAw: {
+    name: 'LUNA (Wormhole)',
+    symbol: 'LUNA',
+    address: '0x593AE1d34c8BD7587C11D539E4F42BFf242c82Af',
+    chainId: 250,
+    decimals: 6,
+    website: 'https://www.terra.money/',
+    description:
+      'Terras native token, LUNA, is used to stabilize the price of the protocols stablecoins.',
+    logoURI: 'https://s2.coinmarketcap.com/static/img/coins/64x64/4172.png',
+  },
   UST: {
-    name: 'USD Terra',
+    name: 'USD Terra (anyswap)',
     symbol: 'UST',
     address: '0xe2D27f06F63d98b8e11b38b5b08A75D0c8dD62B9',
     chainId: 250,
@@ -324,6 +496,28 @@ const _tokens = {
     description:
       'Terra stablecoins offer instant settlements, low fees and seamless cross-border exchange - loved by millions of users and merchants.',
     logoURI: 'https://s2.coinmarketcap.com/static/img/coins/64x64/7129.png',
+  },
+  USTw: {
+    name: 'TerraUSD (Wormhole)',
+    symbol: 'UST',
+    address: '0x846e4D51d7E2043C1a87E0Ab7490B93FB940357b',
+    chainId: 250,
+    decimals: 6,
+    logoURI: 'https://s2.coinmarketcap.com/static/img/coins/64x64/7129.png',
+    website: 'https://coinmarketcap.com/currencies/terrausd-wormhole/',
+    description:
+      'Terra stablecoins offer instant settlements, low fees and seamless cross-border exchange - loved by millions of users and merchants.',
+  },
+  USTaxl: {
+    name: 'TerraUSD (Axelar)',
+    symbol: 'UST',
+    address: '0x2B9d3F168905067D88d93F094C938BACEe02b0cB',
+    chainId: 250,
+    decimals: 6,
+    logoURI: 'https://s2.coinmarketcap.com/static/img/coins/64x64/7129.png',
+    website: 'https://coinmarketcap.com/currencies/terrausd-wormhole/',
+    description:
+      'Terra stablecoins offer instant settlements, low fees and seamless cross-border exchange - loved by millions of users and merchants.',
   },
   SOL: {
     name: 'Solana',
@@ -1211,6 +1405,28 @@ const _tokens = {
     logoURI: 'https://ftmscan.com/token/images/liquiddriver_32.png',
     website: 'https://www.liquiddriver.finance/',
     description: 'Incentivizing deep liquidity for SushiSwap on Fantom Opera.',
+  },
+  beFTM: {
+    name: 'Beefy Escrowed Fantom',
+    symbol: 'beFTM',
+    address: '0x7381eD41F6dE418DdE5e84B55590422a57917886',
+    chainId: 250,
+    decimals: 18,
+    logoURI: '',
+    website: 'https://blog.beefy.finance/articles/introducing-beftm/',
+    description:
+      'Beefy Escrowed Fantom is 1 year perpetually lock FTM that is delegated and locked to earn the maximum validator reward',
+  },
+  sfUSDC: {
+    name: 'Stargate USD Coin LP',
+    address: '0x12edeA9cd262006cC3C4E77c90d2CD2DD4b1eb97',
+    symbol: 'sfUSDC',
+    decimals: 6,
+    website: 'https://www.circle.com/usdc',
+    description:
+      'USDC is a fully collateralized US dollar stablecoin. USDC is issued by regulated financial institutions, backed by fully reserved assets, redeemable on a 1:1 basis for US dollars.',
+    chainId: 250,
+    logoURI: 'https://ftmscan.com/token/images/USDC_32.png',
   },
 } as const;
 

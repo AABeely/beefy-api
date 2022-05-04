@@ -19,7 +19,7 @@ const {
     platforms: { joe },
   },
   moonbeam: {
-    platforms: { beamswap },
+    platforms: { stellaswap, beamswap, solarflare },
   },
 } = addressBook;
 
@@ -60,6 +60,11 @@ const projects = {
     file: '../src/data/avax/joeDualLpPools.json',
     masterchef: joe.masterchefV3,
   },
+  boostedjoe: {
+    prefix: 'joe',
+    file: '../src/data/avax/joeBoostedLpPools.json',
+    masterchef: joe.boostedMasterChef,
+  },
   spooky: {
     prefix: 'boo',
     file: '../src/data/fantom/spookyLpPools.json',
@@ -99,6 +104,16 @@ const projects = {
     prefix: 'beamswap',
     file: '../src/data/moonbeam/beamswapLpPools.json',
     masterchef: beamswap.masterchef,
+  },
+  solarflare: {
+    prefix: 'solarflare',
+    file: '../src/data/moonbeam/solarFlareLpPools.json',
+    masterchef: solarflare.masterchef,
+  },
+  stellaswap: {
+    prefix: 'stellaswap',
+    file: '../src/data/moonbeam/stellaswapLpV2Pools.json',
+    masterchef: stellaswap.masterchefV1distributorV2,
   },
 };
 
