@@ -27,6 +27,105 @@ const MAI = {
 } as const;
 
 const _tokens = {
+  PAE: {
+    name: 'Ripae',
+    symbol: 'PAE',
+    address: '0x8063037ea50E4a066bF1430EA1E3e609CD5cEf6B',
+    chainId: 137,
+    decimals: 18,
+    website: 'https://matic.ripae.finance/',
+    description:
+      'Ripae Finance’s full focus is to build a true cross-chain algorithmic stable coin protocol that is stabilized with true use-cases all around the DeFi Ecosystem.',
+    logoURI: 'https://matic.ripae.finance/static/media/ripae_pae.87e37ce1.svg',
+  },
+  pMATIC: {
+    name: 'pMATIC',
+    symbol: 'pMATIC',
+    address: '0xA0dF47432d9d88bcc040E9ee66dDC7E17A882715',
+    chainId: 137,
+    decimals: 18,
+    website: 'https://matic.ripae.finance/',
+    description:
+      'Ripae Finance’s full focus is to build a true cross-chain algorithmic stable coin protocol that is stabilized with true use-cases all around the DeFi Ecosystem.',
+    logoURI: 'https://matic.ripae.finance/static/media/ripae_pftm.1a3fe2b4.svg',
+  },
+  LCD: {
+    name: 'Lucidao',
+    address: '0xc2A45FE7d40bCAc8369371B08419DDAFd3131b4a',
+    symbol: 'LCD',
+    decimals: 18,
+    chainId: 137,
+    website: 'https://lucidao.com/',
+    description:
+      'Lucidao aims to gather a community of oracles and users to build the infrastructure and facilitate the bridge between crypto and the real worlds.',
+    logoURI:
+      'https://assets.coingecko.com/coins/images/23693/large/lcd-icon-color-200px.png?1645450706',
+  },
+  LDO: {
+    name: 'Lido DAO',
+    address: '0xC3C7d422809852031b44ab29EEC9F1EfF2A58756',
+    symbol: 'LDO',
+    decimals: 18,
+    chainId: 137,
+    website: 'https://stake.lido.fi/',
+    description:
+      'Lido is a liquid staking solution for ETH 2.0 backed by industry-leading staking providers.',
+    logoURI: 'https://assets.coingecko.com/coins/images/13573/large/Lido_DAO.png?1609873644',
+  },
+  cxBTC: {
+    name: 'CelsiusX Wrapped BTC',
+    symbol: 'cxBTC',
+    address: '0xD30DC92b8ec0fa8de625768d208f51A93C10aFF2',
+    chainId: 137,
+    decimals: 18,
+    logoURI:
+      'https://tokens.pancakeswap.finance/images/0xD30DC92b8ec0fa8de625768d208f51A93C10aFF2.svg',
+    website: '',
+    description: '',
+  },
+  NZDS: {
+    name: 'New Zealand Dollar Stablecoin',
+    symbol: 'NZDS',
+    address: '0xeaFE31Cd9e8E01C8f0073A2C974f728Fb80e9DcE',
+    chainId: 137,
+    decimals: 6,
+    website: 'https://www.techemynt.com/',
+    description:
+      'All NZDS tokens are backed 100% by New Zealand dollars held in trust in a bank account (or cash equivalents) confirmed every six months by a leading accounting firm. ',
+    logoURI: 'https://assets.coingecko.com/coins/images/20394/small/nzds.png?1636964381',
+  },
+  jNZD: {
+    name: 'Jarvis Synthetic New Zealand Dollar',
+    symbol: 'jNZD',
+    address: '0x6b526Daf03B4C47AF2bcc5860B12151823Ff70E0',
+    chainId: 137,
+    decimals: 18,
+    website: 'https://jarvis.network/',
+    description:
+      'jNZD is a multi-collateralized synthetic token tracking the price of the New Zealand Dollar. It is built on the top of UMA and Chainlink.',
+    logoURI: 'https://app.jarvis.exchange/assets/bd5ec61c3163ddb222eaadb2ce8d8042.svg',
+  },
+  newQUICK: {
+    name: 'Quickswap',
+    address: '0xB5C064F955D8e7F38fE0460C556a72987494eE17',
+    symbol: 'newQUICK',
+    decimals: 18,
+    chainId: 137,
+    website: 'https://quickswap.exchange/#/swap',
+    description: 'Next-gen Layer 2 DEX. Trade at lightning-fast speeds with near-zero gas fees.',
+    logoURI: 'https://assets.coingecko.com/coins/images/15185/small/quickswap.png?1620044811',
+  },
+  QUIDD: {
+    name: 'QUIDD',
+    address: '0x123706cDD8e60324e610E9A2CC7012D0F45A5b8E',
+    symbol: 'QUIDD',
+    decimals: 18,
+    chainId: 137,
+    website: 'https://www.quiddtoken.com/',
+    description:
+      'A fungible utility token built on Ethereum, QUIDD is the cornerstone of a new, cooperative economic system that aligns the interests of collectors, creators, and developers.',
+    logoURI: 'https://assets.coingecko.com/coins/images/19725/small/quidd.png?1637303435',
+  },
   '4EUR': {
     name: 'Curve Factory 4EUR',
     symbol: '4EUR',
@@ -111,7 +210,7 @@ const _tokens = {
     chainId: 137,
     decimals: 18,
     logoURI:
-      'https://pancakeswap.finance/images/tokens/0xC42C30aC6Cc15faC9bD938618BcaA1a1FaE8501d.svg',
+      'https://tokens.pancakeswap.finance/images/0xC42C30aC6Cc15faC9bD938618BcaA1a1FaE8501d.svg',
     website: 'https://near.org/',
     description:
       'Through simple, secure, and scalable technology, NEAR empowers millions to invent and explore new experiences. Business, creativity, and community are being reimagined for a more sustainable and inclusive future.',
@@ -170,7 +269,7 @@ const _tokens = {
     description:
       'RenBTC is an ERC-20 token built on the Ethereum network, pegged to Bitcoin. This means that each RenBTC can be always redeemed for one Bitcoin, and hence tends to maintain its value at close to the Bitcoin market rate.',
     logoURI:
-      'https://pancakeswap.finance/images/tokens/0xfCe146bF3146100cfe5dB4129cf6C82b0eF4Ad8c.png',
+      'https://tokens.pancakeswap.finance/images/0xfCe146bF3146100cfe5dB4129cf6C82b0eF4Ad8c.png',
   },
   IXT: {
     name: 'IX Token IXT',
@@ -387,7 +486,7 @@ const _tokens = {
     chainId: 137,
     decimals: 18,
     logoURI:
-      'https://pancakeswap.finance/images/tokens/0x8D9bA570D6cb60C7e3e0F31343Efe75AB8E65FB1.svg',
+      'https://tokens.pancakeswap.finance/images/0x8D9bA570D6cb60C7e3e0F31343Efe75AB8E65FB1.svg',
     website: 'https://www.olympusdao.finance/',
     description:
       'Olympus is building a community-owned decentralized financial infrastructure to bring more stability and transparency for the world.',
@@ -1070,7 +1169,7 @@ const _tokens = {
     description:
       'Binance Coin (BNB) is an exchange-based token created and issued by the cryptocurrency exchange Binance. Initially created on the Ethereum blockchain as an ERC-20 token in July 2017, BNB was migrated over to Binance Chain in February 2019 and became the native coin of the Binance Chain.',
     logoURI:
-      'https://pancakeswap.finance/images/tokens/0xbb4cdb9cbd36b01bd1cbaebf2de08d9173bc095c.png',
+      'https://tokens.pancakeswap.finance/images/0xbb4cdb9cbd36b01bd1cbaebf2de08d9173bc095c.png',
   },
   PUP: {
     name: 'Polypup.Finance',
@@ -1190,7 +1289,7 @@ const _tokens = {
     chainId: 137,
     decimals: 18,
     logoURI:
-      'https://pancakeswap.finance/images/tokens/0x2F800Db0fdb5223b3C3f354886d907A671414A7F.svg',
+      'https://tokens.pancakeswap.finance/images/0x2F800Db0fdb5223b3C3f354886d907A671414A7F.svg',
     website: 'https://toucan.earth/',
     description:
       'Toucan Protocol brings carbon as a new money-lego to Web3. Kickstarting an open and decentralized climate finance ecosystem.',
@@ -1202,7 +1301,7 @@ const _tokens = {
     chainId: 137,
     decimals: 9,
     logoURI:
-      'https://pancakeswap.finance/images/tokens/0x4e78011Ce80ee02d2c3e649Fb657E45898257815.svg',
+      'https://tokens.pancakeswap.finance/images/0x4e78011Ce80ee02d2c3e649Fb657E45898257815.svg',
     website: 'https://www.klimadao.finance/',
     description:
       'Klima DAO gives Web3 builders and users the opportunity to participate in the carbon market through the KLIMA token.',
@@ -1285,7 +1384,7 @@ const _tokens = {
   JPYC: {
     name: 'JPY Coin',
     symbol: 'JPYC',
-    address: '0x6AE7Dfc73E0dDE2aa99ac063DcF7e8A63265108c',
+    address: '0x431D5dfF03120AFA4bDf332c61A6e1766eF37BDB',
     chainId: 137,
     decimals: 18,
     website: 'https://jpyc.jp/',

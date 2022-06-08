@@ -228,6 +228,12 @@ import spookyV2LpPools from '../../data/fantom/spookyV2LpPools.json';
 import valasLpPools from '../../data/valasLpPools.json';
 import bombLpPools from '../../data/degens/bombLpPools.json';
 import pegasysLpPools from '../../data/sys/pegasysLpPools.json';
+import ripaeLpPools from '../../data/degens/ripaeLpPools.json';
+import valleySwapLpPools from '../../data/emerald/valleySwapLpPools.json';
+import yuzuLpPools from '../../data/emerald/yuzuLpPools.json';
+import yuzuDualPools from '../../data/emerald/yuzuDualLpPools.json';
+import dfxPools from '../../data/matic/dfxLpPools.json';
+import ripaeMaticPools from '../../data/matic/ripaeLpPools.json';
 
 const INIT_DELAY = 2 * 1000;
 const REFRESH_INTERVAL = 5 * 60 * 1000;
@@ -235,6 +241,11 @@ const REFRESH_INTERVAL = 5 * 60 * 1000;
 // FIXME: if this list grows too big we might hit the ratelimit on initialization everytime
 // Implement in case of emergency -> https://github.com/beefyfinance/beefy-api/issues/103
 const pools = [
+  ...valleySwapLpPools,
+  ...dfxPools,
+  ...yuzuDualPools,
+  ...yuzuLpPools,
+  ...ripaeLpPools,
   ...pegasysLpPools,
   ...bombLpPools,
   ...valasLpPools,
@@ -254,6 +265,7 @@ const pools = [
   ...beamswapPools,
   ...ripaePools,
   ...ripaeAvaxPools,
+  ...ripaeMaticPools,
   ...creditumPools,
   ...trisolarisMiniPools,
   ...grapePools,
@@ -472,11 +484,9 @@ const knownPrices = {
   HUSD: 1,
   DAI: 1,
   USDC: 1,
-  UST: 1,
   USDN: 1,
   cUSD: 1,
   asUSDC: 1,
-  USTaxl: 1,
 };
 
 let tokenPricesCache: Promise<any>;

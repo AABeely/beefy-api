@@ -10,7 +10,7 @@ const {
     platforms: { trisolaris },
   },
   bsc: {
-    platforms: { biswap },
+    platforms: { biswap, babyswap },
   },
   metis: {
     platforms: { netswap, tethys },
@@ -20,6 +20,9 @@ const {
   },
   moonbeam: {
     platforms: { stellaswap, beamswap, solarflare },
+  },
+  emerald: {
+    platforms: { yuzu },
   },
 } = addressBook;
 
@@ -54,6 +57,11 @@ const projects = {
     prefix: 'banana',
     file: '../src/data/degens/apeLpPools.json',
     masterchef: '0x5c8D727b265DBAfaba67E050f2f739cAeEB4A6F9',
+  },
+  babyswap: {
+    prefix: 'babyswap',
+    file: '../src/data/degens/babyLpPools.json',
+    masterchef: babyswap.masterchef,
   },
   joe: {
     prefix: 'joe',
@@ -114,6 +122,11 @@ const projects = {
     prefix: 'stellaswap',
     file: '../src/data/moonbeam/stellaswapLpV2Pools.json',
     masterchef: stellaswap.masterchefV1distributorV2,
+  },
+  yuzu: {
+    prefix: 'yuzu',
+    file: '../src/data/emerald/yuzuDualLpPools.json',
+    masterchef: yuzu.masterchefExt,
   },
 };
 
@@ -179,7 +192,7 @@ async function fetchToken(tokenAddress) {
     address: checksummedTokenAddress,
     chainId: chainId,
     decimals: await tokenContract.decimals(),
-    logoURI: `https://pancakeswap.finance/images/tokens/${checksummedTokenAddress}.svg`,
+    logoURI: `https://tokens.pancakeswap.finance/images/${checksummedTokenAddress}.svg`,
     website: '',
     description: '',
   };

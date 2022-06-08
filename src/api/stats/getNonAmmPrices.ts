@@ -1,5 +1,6 @@
 import getBeltPrices from './bsc/belt/getBeltPrices';
-import getEllipsisPrices from './bsc/ellipsis/getEllipsisPrices';
+import getEllipsisPricesOld from './bsc/ellipsis/getEllipsisPricesOld';
+import { getEllipsisPrices } from './bsc/getEllipsisPrices';
 import getSnob3PoolPrice from './avax/getSnob3PoolPrice';
 import getFroyoPrices from './fantom/getFroyoPrices';
 import getGondolaPrices from './avax/getGondolaPrices';
@@ -16,6 +17,7 @@ import { getSynapsePrices } from './avax/getSynapsePrices';
 import getJarvisPrices from './matic/getJarvisPrices';
 import getSolarbeamPrices from './moonriver/getSolarbeamPrices';
 import getRosePrices from './aurora/getRosePrices';
+import getStellaswapPrices from './moonbeam/getStellaswapPrices';
 
 const getNonAmmPrices = async tokenPrices => {
   let prices = {};
@@ -23,7 +25,8 @@ const getNonAmmPrices = async tokenPrices => {
   const promises = [
     getBeethovenxPrices(tokenPrices),
     getBeltPrices(tokenPrices),
-    getEllipsisPrices(),
+    getEllipsisPricesOld(),
+    getEllipsisPrices(tokenPrices),
     getSnob3PoolPrice(),
     getFroyoPrices(),
     getGondolaPrices(tokenPrices),
@@ -39,6 +42,7 @@ const getNonAmmPrices = async tokenPrices => {
     getSynapsePrices(),
     getJarvisPrices(tokenPrices),
     getSolarbeamPrices(tokenPrices),
+    getStellaswapPrices(tokenPrices),
   ];
 
   // Setup error logs
